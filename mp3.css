@@ -1,0 +1,884 @@
+body{
+    background-color: #061d50;
+    padding: 0;
+    margin: 0;
+}
+.mp3-header{
+    display: flex;
+    height: 70px;
+}
+.level{
+    display: flex;
+    padding: 8px;
+    margin-left: 1%;
+    width: 70%;
+}
+.level-left{
+    display: flex;
+}
+.container .search-header{
+    border-radius: 20px;
+    width: 90%;
+    height: 39px;
+    justify-content: space-between;
+    font-size: 14px;
+    background-color: white;
+    border: none;
+    padding: 0 38px;
+}
+.navbar-menu{
+    width: 19%;
+    background-image: url(./zingmp3/img/london.jpg);
+    height: 130vh;
+    display: fixed;
+    z-index: 999;
+    border-radius: 12px;
+}
+.navbar-menu img{
+    width: 100%;
+    border-radius: 12px;
+    cursor: pointer;
+    height: 90px;
+}
+.navbar-menu ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+}
+.navbar-menu li{
+    font-weight: 1000; 
+}
+.navbar-menu li:hover{
+    background-color: #061d50;
+}
+.navbar-menu li a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+   padding: 10px;
+}
+.navmenu-top{
+    border-bottom: 1px solid gray;
+}
+.navmenu-bot{
+    margin-top: 5px;
+}
+.vip-banner{
+    text-align: center;
+    background-color: #5a4be7 ;
+    border-radius: 10px;
+    margin: 32px;
+}
+.vip-banner .text{
+    text-align: center;
+    padding: 15px 12px;
+    font-weight: 600;
+    color: white;
+}
+.vip-banner .level-up{
+    margin-bottom: 16px  ;
+    border-radius: 12px;
+    padding: 6px 43px;
+    background-color: #ffdb00;
+    cursor: pointer;
+    font-weight: 600;
+}
+.vip-banner .level-up:hover{
+    opacity: 0.5;
+}
+.navmenu-botnav{
+    border-bottom: 1px solid lightgrey;
+}
+.navmenu-botnav .text{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.navmenu-botnav .song{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.navmenu-botnav .song a{
+    text-decoration: none;
+    padding: 10px 20px;
+    font-weight: 300;
+    color: whitesmoke;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.navmenu-botnav .song i{
+    margin-right: 5px;
+}
+.navmenu-botnav .song:hover{
+    background-color:#061d50;
+}
+.navmenu-botnav .list-music {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-weight: 300;
+    text-decoration: none;
+    padding: 10px 2px;
+}
+.navmenu-botnav .list-music i{
+    margin-right: 5px;
+}
+.navmenu-botnav .list-music:hover{
+    background-color: #061d50;
+}
+.navbar-menu .new-list{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 20px 2px;
+}
+.navbar-menu .new-list:hover{
+    background-color: #061d50;
+}
+.container{
+    width: 440px;
+    height: 42px;
+    display: inline-block;
+    background-color: #061d50;
+    margin-left: 5px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+.container i{
+    position: absolute;
+    top: 2.8%;
+    left: 22%;
+}
+ .left-btn,.right-btn {
+    border-radius: 12px;
+    cursor: pointer;
+    margin-top: 7px;
+    border: none;
+    width: 38px;
+    height: 27px;
+    margin-right: 8px;
+}
+.level-right{
+    position: absolute;
+    right: 5.5%;
+}
+.level-right .topic-btn:hover {
+    opacity: 0.4;
+}
+.level-right .vip-btn:hover{
+    opacity: 0.4;
+}
+.level-right .up-btn:hover{
+    opacity: 0.4;
+}
+.level-right .home-btn:hover{
+    opacity: 0.4;
+}
+.level-right .topic-btn{
+    width: 40px;
+    height: 38px;
+    border-radius: 999px;
+    cursor: pointer;
+    background-color: lightcyan;
+    border: none;
+    margin-right: 5px;
+    transition: all 0.5s ease;
+}
+.level-right .vip-btn{
+    width: 40px;
+    height: 38px;
+    border-radius: 999px;
+    cursor: pointer;
+    background-color: lightcyan;
+    border: none;
+    margin-right: 5px;
+    transition: all 0.5s ease;
+}
+.level-right .up-btn{
+    width: 40px;
+    height: 38px;
+    border-radius: 999px;
+    cursor: pointer;
+    background-color: lightcyan;
+    border: none;
+    margin-right: 5px;
+    transition: all 0.5s ease;
+}
+.level-right .home-btn{
+    width: 40px;
+    height: 38px;
+    border-radius: 999px;
+    cursor: pointer;
+    background-color: lightcyan;
+    border: none;
+    transition: all 0.5s ease;
+}
+.gallery{
+    display: flex;
+    justify-content: end;
+    margin-right: 60px;
+}
+.product-item img{
+    border-radius: 20px;
+    width: 351px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+}
+.product-item{
+    position: relative;
+    margin: 18px;
+}
+.product-item::after{
+    background-color: #000;
+    border-radius: 20px;
+    bottom: 0;
+    content: "START";
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: opacity .3s ease;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #fff;
+    justify-content: center;
+    height: 98%;
+}
+.product-item:hover::after {
+    opacity: .8;
+}
+
+.new-product{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;    
+    color: white;
+    margin-left: 21%;
+}
+.new-product a{
+    justify-content: center;
+    font-weight: 300px;
+    text-decoration: none;
+    color: gray;
+    margin-right: 70px;
+}
+.container-new-product{
+    display: flex;
+    justify-content: flex-start;
+    margin: 0 316px;
+}
+.new-product1{
+    position: relative;
+}
+.new-product1:hover::after{
+    content: "START";
+    color: white;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    width: 85%;
+    height: 79%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    border-radius: 10px;
+    cursor: pointer;
+    border-radius: 12px;
+}
+.new-product1 img{
+    width: 150px;
+    height: 150px;
+    margin-right: 10px;
+    border-radius: 12px;
+    margin-right: 28px;
+}
+.new-product1 a {
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+    cursor: pointer;
+}
+.container-your-music{
+    color: white;
+    margin-left: 21%;
+    display: flex;
+}
+.yourmusic {
+    display: flex;
+    margin: 0 316px;
+}
+.yourmusic-1{
+    position: relative;
+}
+.yourmusic-1:hover::after{
+    content: "START";
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    position: absolute;
+    top: 0%;
+    left: 0;
+    height: 69%;
+    width: 89%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.yourmusic-1 img{
+    width: 220px;
+    height: 220px;
+    margin-right: 10px;
+    border-radius: 12px;
+    margin-right: 28px;
+}
+.yourmusic-1 span {
+    text-decoration: none;
+    color: white;
+    font-weight: 1000;
+    cursor: pointer;
+}
+.yourmusic a{
+    text-decoration: none;
+    font-size: 14px;
+    user-select: none;
+    color: gray;
+    font-family: inherit;
+}
+.formlogin{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+    display: none;
+}
+.container-login{
+    position: relative;
+    max-width: 850px;
+    width: 30%;
+    background: #fff;
+    padding: 40px 40px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    perspective: 2700px;
+    animation: loginShow 0.5s ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.container-login i{
+position: absolute;
+top: 0;
+right: 0;
+z-index: 999;
+size: 35px;
+font-weight: bold;
+background-color: red;
+color: white;
+padding: 10px;
+}
+.container-login i:hover{
+opacity: 0.5;
+cursor: pointer;
+}
+.container-login i .ti-close{
+height: 28px;
+width: 30px;
+}
+.container-login i .login--close{
+height: 20px;
+}
+.form-content .form-login{
+    display: flex;
+    flex-direction: column;
+}
+.form-login h1{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+}
+
+
+.text-1{
+    color: white;
+    font-weight: 700;
+}
+.text-2{
+    color: white;
+}
+.form-login input{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid;
+    margin-bottom: 5px;
+    outline: none;
+}
+.form-login a{
+    font-size: 16px;
+    margin-top: 9px;
+    text-decoration: none;
+    color: mediumblue;
+}
+
+.form-login button{
+    font-size: 20px;
+    padding: 12px;
+    background-color: plum;
+    cursor: pointer;
+    margin-top: 30px;
+    border: none;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+.form-login p{
+    margin-top: 30px;
+    text-align: center;
+    color: mediumblue;
+}
+.js-login{
+    cursor: pointer;
+}
+.openlogin{
+    display: block !important;
+}
+.formsignup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 99999;
+    display: none;
+}
+.container-signup{
+    position: fixed;
+    max-width: 850px;
+    width: 30%;
+    background: #fff;
+    padding: 40px 40px;
+    box-shadow: 0 5px 10px rgb(0 0 0 / 20%);
+    perspective: 2700px;
+    animation: loginShow 0.5s ease;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    height: 39%;
+}
+.container-signup i{
+position: absolute;
+top: 0;
+right: 0;
+z-index: 999;
+size: 35px;
+font-weight: bold;
+background-color: red;
+color: white;
+padding: 10px;
+}
+.container-signup i:hover{
+opacity: 0.5;
+cursor: pointer;
+}
+.container-signup i .ti-close{
+height: 28px;
+width: 30px;
+}
+.container-signup i .login--close{
+height: 20px;
+}
+.form-content .form-sign-up{
+    display: flex;
+    flex-direction: column;
+}
+.form-sign-up h1{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: black;
+}
+.form-sign-up a{
+    text-decoration: none;
+}
+.form-sign-up input{
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid;
+    margin-bottom: 10px;
+    outline: none;
+}
+.form-sign-up a{
+    font-size: 14px;
+    margin-top: 5px;
+
+}
+.form-sign-up button{
+    font-size: 20px;
+    padding: 12px;
+    background-color: plum;
+    cursor: pointer;
+    margin-top: 30px;
+    border: none;
+    margin-bottom: 30px;
+    border-radius: 6px;
+}
+.form-sign-up p{
+    margin-top: 30px;
+    text-align: center;
+}
+.container-signup i .login-close{
+    height: 20px;
+    }
+.js-signup{
+    cursor: pointer;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+.opensignup{
+    display: block ;
+}
+.container-user{
+    width: 81%;
+    margin-left: 16%;
+}
+.user-profile{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+}
+.avatar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.avatar img{
+    border-radius: 999px;
+    height: 110px;
+    width: 110px;
+}
+.user-profile h1{
+    color: white;
+    font-family: sans-serif    ;
+}
+.user-profile-action{
+    position: absolute;
+    top: 12%;
+    right: 5%;
+}
+.user-profile-action button{
+    border-radius: 20px;
+    font-size: 12px;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.user-profile-action .color-back{
+    background-color: #ffdb00;
+}
+.user-profile-action button:hover{
+    opacity: 0.5;
+}
+.list-menu ul{
+    display: flex;
+    background-color: grey;
+    border-radius: 15px;
+    list-style-type: none;
+    padding: 0 30px;
+    justify-content: center;
+    width: 32%;
+    margin-left: 32%;
+}
+.list-menu ul li{
+    margin: 5px 10px;
+    color: lightgrey;
+    font-size: 12px;
+    font-family:  sans-serif;
+    margin: 10px 8px;
+    font-weight: 500;
+    padding: 0 8px;
+}
+.list-menu ul li:hover{
+    color: white;
+    opacity: 1.2;
+    cursor: pointer;
+}
+.container-song{
+    display: flex;
+}
+.container-song h1{
+    margin-left: 7%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 22px;
+}
+.container-song a{
+    text-decoration: none;
+    margin-top: 20px;
+    margin-left: 56%;
+    color: lightslategrey;
+    font-size: 13px;
+}
+.container-song button{
+    border-radius: 20px;
+    width: 18vh;
+    height: 4vh;
+    margin-top: 12px;
+    border: none;
+    margin-left: 8px;
+    cursor: pointer;
+    padding: 8px
+}
+.container-song button:hover{
+    opacity: 0.5;
+}
+.container-song .ti-upload,.ti-control-play{
+    margin-right: 3px;
+}
+.container-song .btn {
+    background-color: #3460f5;
+    color: white;
+    padding: 8px;
+}
+.section-song{
+    display: flex;
+}
+.slider {
+    display: flex;
+    align-items: center;
+    width: 20%;
+}
+.slider ul{
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 19%;
+}
+.slider ul li {
+    list-style-type: none;
+}
+.media{
+    margin-left: 14%;
+    margin-top: 18px;
+    width: 70%;
+    height: 240px;
+    background:#0b1d43;
+    border-radius: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.media-img{
+    display: flex;
+    width: 28%;
+}
+.media-img img{
+    width: 50px;
+    border-radius: 12px;
+    height: 60px;
+}
+.media-all:hover{
+    opacity: 0.6;
+}
+.media-img .card-info{
+    margin-top: 3%;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.media-left{
+    display: flex;
+    border-bottom: 1px solid gray;
+    flex-shrink: 0;
+}
+.media-left .name-song{
+    margin-left: 10px;
+    margin-top: 3px;
+}
+.media-left .name-singer{
+    margin-left: 10px;
+    margin-top: 4px;
+    font-size: 14px;
+    color: gray;
+}
+.media-img .media-center{
+    margin-left: 10px;
+}
+.media-center{
+    margin-top: 18px;
+    width: 37%;
+}
+.media-center a{
+    text-decoration: none;
+    color: lightgrey;
+    margin-left: 75px;
+}
+.media-right{
+    display: flex;
+    align-items: center;
+    margin-left: 20%;
+}
+.media-right  .ti-heart{
+    color: #6b3483;
+    border-radius: 999px;
+}
+.media-right  .ti-heart:hover{
+    cursor: pointer;
+    color: #3460f5;
+}
+.media-right .song-time{
+    margin-left: 20px;
+    font-size: 16px;
+    color: lightgrey;
+}
+.play-list-title{
+    display: flex;
+}
+.title-list{
+    color: white;
+    font-family: sans-serif;
+    font-size: 22px;
+    margin-left: 7%;
+    margin-top: 5%;
+    font-weight: 700;
+}
+.play-list-title a{
+    text-decoration: none;
+    margin-top: 54px;
+    margin-left: 78%;
+    color: lightslategrey;
+    font-size: 13px;
+}
+.empty-playlist{
+    margin-left: 7%;
+    margin-top: 2%;
+    background: linear-gradient(33deg,#5a1eae -7%,#ce267a 117%);
+    width: 18%;
+    height: 304px;
+    margin-bottom: 5%;
+    border-radius: 10px;
+    position: relative;
+}
+
+.empty-playlist:hover::after{
+    content: "START";
+    color: white;
+    background-color: black;
+    transition: opacity .3s ease;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+    border-radius: 10px;
+}
+.empty-playlist .set-icon{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 55%;
+    font-family: sans-serif;
+    color: white;
+}
+.play-list{
+    display: flex;
+}
+.empty-playlist img{
+    border-radius: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+}
+.empty-playlist a{
+    text-decoration: none;
+    color: white;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.empty-playlist a:hover{
+    color: lightskyblue;
+}
+.empty-playlist p{
+    color: white;
+    font-size: 14px;
+}
+.empty-playlist-1{
+    width: 18%;
+    height: 304px;
+    margin-bottom: 5%;
+    position: relative;
+    margin-left: 5%;
+    margin-top: 2%;
+}
+.empty-playlist-1:hover::after{
+    content: "START";
+    background-color: #000;
+    color: white;
+    opacity: 0.8;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    cursor: pointer;
+    width: 100%;
+    height: 82%;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.empty-playlist-1 img{
+    width: 100%;
+    height: 248px;
+    border-radius: 12px;
+    margin-bottom: 4%;
+}
+.empty-playlist-1 a{
+    color: lightgrey;
+    text-decoration: none;
+    margin-left: 1%;
+}
+.empty-playlist-1 a:hover{
+    color: #3460f5;
+}
+.empty-playlist-1 p{
+    color: grey;
+    margin-top: 3%;
+    margin-left: 1%;
+}
+
+
