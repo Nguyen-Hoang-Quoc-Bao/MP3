@@ -1,0 +1,123 @@
+/*PC */
+@media only screen and (min-width: 1024px){
+    .container-new-product,
+.container-your-music, .yourmusic{
+    display: flex !important;
+}
+    .container-new-product{
+        display: flex !important; 
+        margin: 0 314px !important;
+    }
+    .container .search-header{
+        width: 38%;
+    }
+    .container i{
+        left: 2% !important;
+    }
+    .new-product a{
+        margin-right: 6% !important;
+    }
+    .container-your-music{
+        margin-left: 21% !important;
+    }
+    .yourmusic{
+        margin-left: 309px !important;
+    }
+}
+/*Tablet */
+@media (min-width: 740px) and (max-width: 1023px){
+    .navbar-menu{
+        display: none;
+    }
+}
+/*mobile*/
+@media (max-width: 739px){
+   .navbar-menu{
+    display: none;
+   }
+   .mp3-header{
+       width: 100%;
+       height: 20%;
+   } 
+   .level{
+       margin-top: 10px;
+   }  
+   .container {
+    height: 140px;
+    display: flex;
+    justify-content: center;
+}
+.container .search-header{
+    width: 90%;
+}
+.level-right{
+       display: none;
+}
+.gallery{
+       display: block;
+}
+.product-item {
+    display: flex;
+    flex-direction: column;
+    width: 93vw;
+}
+.product-item img{
+    width: 100%;
+}
+.product-item::after{
+       display: none;
+}
+.new-product{
+    margin-left: 5%
+}
+.container-new-product{
+    display: block;
+}
+.new-product1:hover::after{
+    display: none;
+}
+   .vip-banner{
+       display: none;
+   }
+   .navbar-menu .new-list{
+       align-items: center;
+   }
+}
+.container-new-product,
+.container-your-music, .yourmusic{
+    display: block
+}
+.container-new-product{
+    margin: 0 135px;
+}
+.container-your-music{
+    margin-left: 5%;
+}
+.yourmusic{
+    margin-left:100px;
+    width: 218px;
+}
+.yourmusic-1{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.container{
+    width: 100%;
+    height: unset;
+    position: relative;
+}
+.search-header{
+    padding: 0px 50px !important;
+    width: unset;
+    height: unset;
+}
+.container i{
+    left: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.new-product a{
+    margin-right: 10px;
+}
