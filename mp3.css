@@ -590,7 +590,7 @@ height: 20px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 3%;
+    margin-top: 3% ;
 }
 .avatar img{
     border-radius: 999px;
@@ -1051,9 +1051,9 @@ height: 20px;
 .new-product a{
     margin-right: 10px;
 }
-/* .user-profile-action{
+.user-profile-action{
     display: none;
-} */
+}
 .user-profile h1{
     font-size: 20px;
 }
