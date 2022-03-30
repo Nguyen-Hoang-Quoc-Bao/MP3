@@ -712,7 +712,7 @@ height: 20px;
 .media{
     margin-left: 12%;
     margin-top: 18px;
-    width: 70%;
+    width: 66%;
     height: 240px;
     background:#0b1d43;
     border-radius: 10px;
@@ -910,9 +910,6 @@ height: 20px;
     .container-new-product{
         display: flex !important; 
         margin: 0 314px !important;
-    }
-    .container .search-header{
-        width: 38%;
     }
     .container i{
         left: 2% !important;
