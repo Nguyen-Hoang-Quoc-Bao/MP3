@@ -339,7 +339,8 @@ body{
 .yourmusic-1{
     position: relative;
     display: flex;
-    text-align: inherit !important;
+    flex-direction: column;
+    text-align: inherit ;
 }
 .yourmusic-1:hover::after{
     content: "START";
@@ -634,8 +635,8 @@ height: 20px;
     list-style-type: none;
     padding: 0 30px;
     justify-content: center;
-    width: 32% !important;
-    margin-left: 32% !important;
+    width: 32% ;
+    margin-left: 32% ;
 }
 .list-menu ul li{
     margin: 5px 10px;
@@ -1020,7 +1021,6 @@ height: 20px;
    .navbar-menu .new-list{
        align-items: center;
    }
-}
 .container-new-product,
 .container-your-music, .yourmusic{
     display: block
@@ -1060,14 +1060,79 @@ height: 20px;
     margin-right: 10px;
 }
 .user-profile-action{
-    display: block;
+    display: none;
 }
 .user-profile h1{
     font-size: 20px;
+}
+.container-user{
+    margin-left: 2%;
 }
 .list-menu ul{
     width: 70%;
     margin-left: 1%;
 }
+.user-profile{
+    width: 112%;
+}
+.slider{
+    display: none;
+}
+.list-menu ul{
+    width: 98%;
+}
+.list-menu ul li{
+    font-size: 9px;
+    width: 80%;
+    padding: 4px 2px;
+}
+.container-song button{
+    font-size: 11px;
+}
+.container-song{
+    width: 117%;
+}
+.container-song h1{
+    margin-left: 2%;
+    width: 40%;
+}
+.container-song a{
+    display: none;
+}
+.section-song{
+    width: 114%;
+}
+.media{
+    width: 100%;
+    margin-left: 2%;
+}
+.media-center,.media-left .name-singer {
+    display: none;
+    width: 0%;
+}
+.media-left .name-song{
+    width: 243%;
+}
+.media-right{
+    margin-left: 47%;
+}
+.title-list{
+    margin-left: 2%;
+}
+.play-list-title a{
+    display: none;
+}
 
+.empty-playlist{
+    margin-left: 2%;
+    width: 50%;
+    height: 124%;
+}
+.empty-playlist-1{
+    width: 50%;
+}
+.empty-playlist:hover::after{
+    display: none;
+}
+}
 
