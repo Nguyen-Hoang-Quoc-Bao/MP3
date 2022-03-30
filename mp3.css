@@ -630,7 +630,7 @@ height: 20px;
 }
 .list-menu ul{
     display: flex;
-    background-color: grey;
+    background-color: #061d50;
     border-radius: 15px;
     list-style-type: none;
     padding: 0 30px;
@@ -903,31 +903,22 @@ height: 20px;
 }
 /*PC */
 @media only screen and (min-width: 1024px){
-    .container-new-product,
-.container-your-music, .yourmusic{
-    display: flex !important;
-}
-    .container-new-product{
-        display: flex !important; 
-        margin: 0 314px !important;
-    }
-    .container i{
-        left: 2% !important;
-    }
-    .new-product a{
-        margin-right: 6% !important;
-    }
-    .container-your-music{
-        margin-left: 21% !important;
-    }
-    .yourmusic{
-        margin-left: 309px !important;
-    }
+
 }
 /*Tablet */
 @media (min-width: 750px) and (max-width: 1023px){
     .navbar-menu{
         display: none;
+    }
+    .new-product a{
+        margin-right: 33px;
+    }
+    .container-new-product{
+        flex-direction: column;
+        margin: 0 102px;
+    }
+    .container-your-music{
+        margin-left: 5%;
     }
     .gallery{
         display: block;
@@ -938,9 +929,9 @@ height: 20px;
     }
     .level-right{
         right: 3.5%;
-        top: 1.4%;
+        top: 1%;
     }
-    .product-item::after, .new-product1:hover::after{
+    .product-item::after{
         display: none;
     }
     .new-product{
@@ -950,6 +941,10 @@ height: 20px;
         display: flex;
         align-items: center;
         width: 115%;
+    }
+    .new-product1:hover::after{
+        width: 33%;
+        height: 87%;
     }
     .new-product1 img{
         width: 210px;
@@ -961,9 +956,82 @@ height: 20px;
         margin-right: 10px;
     }
     .yourmusic{
-     display: flex !important;
-     margin-left: 40px !important;
+        display: flex !important;
+        margin-left: 40px !important;
     }
+    .yourmusic-1:hover::after{
+        height: 66%;
+        width: 89%;
+    }
+/* User*/
+.container i{
+    top: 1.8%;
+    left: 4%;
+}
+.container-user{
+    margin-left: 4%;
+    width: 92%;
+}
+.user-profile-action{
+    top: 7%;
+    right: 3.5%;
+}
+.avatar{
+    margin-top: 7%;
+}
+.list-menu{
+    width: 55%;
+}
+.list-menu ul{
+    width: 100%;
+}
+.container-song{
+    width: 114%;
+}
+.container-song h1{
+    margin-left: 0%;
+    width: 23%;
+    margin-top: 20px;
+}
+.container-song a{
+    margin-top: 26px;
+    margin-left: 15%;
+}
+.container-song button{
+    width: 20%;
+}
+.slider{
+    width: 31%;
+}
+.slider ul{
+    margin-left: 0%;
+}
+.media{
+    margin-left: 10%;
+    width: 119%;
+}
+.media-all{
+    width: 210%;
+}
+.media-img{
+    width: 23%;
+}
+.media-right{
+    margin-left: 3%;
+}
+.title-list{
+    margin-left: 0%;
+}
+.empty-playlist{
+    height: 230px;
+    margin-left: 5%;
+}
+.empty-playlist-1 img{
+    height: 230px;
+}
+.empty-playlist-1:hover::after{
+    height: 76%;
+}
 }
 /*mobile*/
 @media only screen and (max-width: 690px){
@@ -998,10 +1066,11 @@ height: 20px;
     width: 93vw;
 }
 .product-item img{
-    width: 100%;
+    width: 97%;
 }
 .product-item::after{
-       display: none;
+    height: 100%;
+    width: 97%;
 }
 .new-product{
     margin-left: 5%
@@ -1010,7 +1079,8 @@ height: 20px;
     display: block;
 }
 .new-product1:hover::after{
-    display: none;
+    width: 103%;
+    height: 87%;
 }
    .vip-banner{
        display: none;
@@ -1037,7 +1107,10 @@ height: 20px;
     flex-direction: column;
     text-align: center;
 }
-
+.yourmusic-1:hover::after{
+    height: 67%;
+    width: 101%;
+}
 .container{
     width: 100%;
     height: unset;
