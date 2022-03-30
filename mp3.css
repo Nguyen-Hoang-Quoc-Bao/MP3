@@ -3,6 +3,7 @@ body{
     padding: 0;
     margin: 0;
 }
+/* header*/
 .mp3-header{
     display: flex;
     height: 70px;
@@ -26,6 +27,7 @@ body{
     border: none;
     padding: 0 38px;
 }
+/* navbar*/
 .navbar-menu{
     width: 19%;
     background-image: url(./zingmp3/img/london.jpg);
@@ -147,7 +149,7 @@ body{
 }
 .navbar-menu .new-list:hover{
     background-color: #061d50;
-}
+}/*search*/
 .container-new-product{
     display: block;
     margin: 0;
@@ -232,6 +234,7 @@ body{
     border: none;
     transition: all 0.5s ease;
 }
+/*MV*/
 .gallery{
     display: flex;
     justify-content: end;
@@ -269,7 +272,7 @@ body{
 .product-item:hover::after {
     opacity: .8;
 }
-
+/* bài mới*/
 .new-product{
     display: flex;
     justify-content: space-between;
@@ -322,6 +325,7 @@ body{
     font-weight: 1000;
     cursor: pointer;
 }
+/*có thể bạn muốn nghe*/
 .container-your-music{
     color: white;
     margin-left: 21%;
@@ -373,6 +377,7 @@ body{
     color: gray;
     font-family: inherit;
 }
+/*login*/
 .formlogin{
     position: fixed;
     top: 0;
@@ -474,6 +479,7 @@ height: 20px;
 .openlogin{
     display: block !important;
 }
+/*signup*/
 .formsignup{
     position: fixed;
     top: 0;
@@ -563,7 +569,7 @@ height: 20px;
 }
 .container-signup i .login-close{
     height: 20px;
-    }
+}
 .js-signup{
     cursor: pointer;
     text-decoration: none;
@@ -574,6 +580,7 @@ height: 20px;
 .opensignup{
     display: block ;
 }
+/*user*/
 .container-user{
     width: 81%;
     margin-left: 16%;
@@ -602,6 +609,7 @@ height: 20px;
     font-family: sans-serif    ;
 }
 .user-profile-action{
+    display: block ;
     position: absolute;
     top: 12%;
     right: 5%;
@@ -1052,7 +1060,7 @@ height: 20px;
     margin-right: 10px;
 }
 .user-profile-action{
-    display: none;
+    display: block;
 }
 .user-profile h1{
     font-size: 20px;
