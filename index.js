@@ -2,12 +2,17 @@
 const login = document.querySelector('.js-login')
 const formlogin = document.querySelector('.formlogin')
 const closelogin = document.querySelector('.login--close')
+const btnLogin = document.querySelector('.login-btn')
 login.addEventListener('click', function(){
     formlogin.classList.add('openlogin')
 })
 closelogin.addEventListener('click', function(){
     formlogin.classList.toggle('openlogin')
 })
+btnLogin.onclick = function(){
+        alert('Đăng nhập thành công');
+        formlogin.classList.remove('openlogin');
+}
 //signup
 const signup = document.querySelector('.js-signup')
 const formsignup = document.querySelector('.formsignup')
