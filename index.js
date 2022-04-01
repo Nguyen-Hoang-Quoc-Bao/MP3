@@ -23,14 +23,26 @@ closesignup.addEventListener('click', function(){
 })
 
 //header
-const Iconmenu = document.getElementById('moblie-navbar');
+const homemenu = document.getElementById('moblie-navbar');
 const header = document.getElementById('header-0');
-Iconmenu.onclick = function(){
+homemenu.onclick = function(){
     var isOpen = header.clientHeight === 49;
     if(isOpen) {
         header.style.height = 'auto';
     }
     else{
         header.style.height = '49px';
+    }
+}
+
+const menuUser = document.getElementById('moblie-navbar');
+const headeruser = document.getElementById('header-0');
+menuUser.onclick = function(){
+    var isOpen = headeruser.clientHeight === 49;
+    if(isOpen) {
+        headeruser.style.height = 'auto';
+    }
+    else{
+        headeruser.style.height = '49px';
     }
 }
