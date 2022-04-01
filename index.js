@@ -1,3 +1,4 @@
+//login
 const login = document.querySelector('.js-login')
 const formlogin = document.querySelector('.formlogin')
 const closelogin = document.querySelector('.login--close')
@@ -21,13 +22,15 @@ closesignup.addEventListener('click', function(){
     formsignup.classList.toggle('opensignup')
 })
 
-const a =['1','sada','dq82y dh'];
-console.log(a);
-
-for (let i = 0; i < a.length; i++) {
-    console.log(i)
+//header
+const Iconmenu = document.getElementById('moblie-navbar');
+const header = document.getElementById('header-0');
+Iconmenu.onclick = function(){
+    var isOpen = header.clientHeight === 49;
+    if(isOpen) {
+        header.style.height = 'auto';
+    }
+    else{
+        header.style.height = '49px';
+    }
 }
-
-const remove = a.splice(1,1);
-console.log(a);
-console.log(remove);
